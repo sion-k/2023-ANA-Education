@@ -27,6 +27,13 @@ int main(int argc, char* argv[]) {
         for (int i = 0; i < m; i++) {
             vector<int> b = inf.readInts(2, N_MIN, N_MAX, "u v");
             inf.readEoln();
+
+            int u = b[0];
+            int v = b[1];
+            u--; v--;
+
+            inf.ensuref(a[u] > 0, "u번째 대여소는 비어있지 않아야 합니다");
+            a[u]--; a[v]++;
         }
     }
 
