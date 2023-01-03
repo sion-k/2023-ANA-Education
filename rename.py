@@ -1,8 +1,8 @@
 import os
 
-path = './stalin-sort-2-8$linux/tests'
+path = './package/ant-2-1$linux/tests'
 
-for i in range(11, 12):
+for i in range(1, 11):
     input_path = f'{path}/{i:02d}'
     new_input_path = f'{path}/{i:02d}.in.txt'
 
