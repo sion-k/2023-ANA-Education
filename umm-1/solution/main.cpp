@@ -38,7 +38,7 @@ void solve() {
     int a, b;
     cin >> a >> b;
 
-    cout << (check(s.substr(a - 1, b)) ? "YES" : "NO") << "\n";
+    cout << (check(s.substr(a - 1, b - a + 1)) ? "YES" : "NO") << "\n";
 }
 
 int main() {
