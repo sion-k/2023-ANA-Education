@@ -1,3 +1,7 @@
+import sys
+input = sys.stdin.readline
+
+bw = []
 tc = int(input())
 
 for _ in range(tc):
@@ -26,4 +30,6 @@ for _ in range(tc):
 
         ret.append("1" if flag else "0")
 
-    print("".join(ret))
+    bw.append("".join(ret))
+
+print(*bw, sep="\n")
