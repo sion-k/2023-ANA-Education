@@ -15,7 +15,7 @@ for _ in range(tc):
         if i - 1 >= 0:
             p[i] += p[i - 1]
     
-    ret = []
+    cnt = 0
 
     for i in range(m):
         a, b = map(int, input().split())
@@ -28,8 +28,8 @@ for _ in range(tc):
 
         flag = b - a + 1 >= 3 and s[a] == 'U' and sum == b - a
 
-        ret.append("1" if flag else "0")
+        cnt += 1 if flag else 0
 
-    bw.append("".join(ret))
+    bw.append(cnt)
 
 print(*bw, sep="\n")

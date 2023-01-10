@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int N_MIN = 1, N_MAX = 100'000;
+const int N_MIN = 1, N_MAX = 200'000;
 
 int main(int argc, char* argv[]) {
     registerGen(argc, argv, 1);
@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
     cout << s << "\n";
 
     for (int i = 0; i < m; i++) {
-        int a = 20000 * rnd.next(0, 4);
+        int a = 20000 * rnd.next(0, 9);
         int b = a + 20000 - 1;
 
         // 답을 0으로 만듬

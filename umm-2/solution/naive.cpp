@@ -35,14 +35,16 @@ void solve() {
     string s;
     cin >> s;
 
+    int cnt = 0;
+
     for (int i = 0; i < m; i++) {
         int a, b;
         cin >> a >> b;
 
-        cout << (check(s.substr(a - 1, b - a + 1)) ? 1 : 0);
+        cnt += check(s.substr(a - 1, b - a + 1));
     }
 
-    cout << "\n";
+    cout << cnt << "\n";
 }
 
 int main() {

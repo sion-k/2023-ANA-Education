@@ -5,7 +5,7 @@ using namespace std;
 
 // N의 길이에 가까운 쿼리가 들어온다
 // 대부분 정답은 0이지만 1인게 딱 하나 있음
-const int N_MIN = 1, N_MAX = 100'000;
+const int N_MIN = 1, N_MAX = 200'000;
 
 int main(int argc, char* argv[]) {
     registerGen(argc, argv, 1);

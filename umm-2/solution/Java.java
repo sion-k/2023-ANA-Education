@@ -25,6 +25,8 @@ public class Java {
                 }
             }
 
+            int cnt = 0;
+
             for (int i = 0; i < m; i++) {
                 st = new StringTokenizer(br.readLine(), " ");
                 int a = Integer.parseInt(st.nextToken());
@@ -38,9 +40,12 @@ public class Java {
 
                 boolean flag = b - a + 1 >= 3 && s.charAt(a) == 'U' && sum == b - a;
 
-                bw.append(flag ? 1 : 0);
+                if (flag) {
+                    cnt++;
+                }
             }
 
+            bw.append(cnt);
             bw.append("\n");
         }
         

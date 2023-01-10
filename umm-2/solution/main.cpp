@@ -34,6 +34,8 @@ void solve() {
         }
     }
 
+    int cnt = 0;
+
     for (int i = 0; i < m; i++) {
         int a, b;
         cin >> a >> b;
@@ -46,10 +48,10 @@ void solve() {
 
         bool flag = b - a + 1 >= 3 && s[a] == 'U' && sum == b - a;
 
-        cout << flag;
+        cnt += flag;
     }
 
-    cout << "\n";
+    cout << cnt << "\n";
 }
 
 int main() {

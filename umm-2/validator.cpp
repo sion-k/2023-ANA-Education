@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int N_MIN = 1, N_MAX = 100'000;
+const int N_MIN = 1, N_MAX = 200'000;
 
 int main(int argc, char* argv[]) {
     registerValidation(argc, argv);
