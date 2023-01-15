@@ -45,9 +45,7 @@ for _ in range(tc):
     k = int(input())
     t = input()
 
-    y, x = solve(n, m, s, k, t)
+    ret.append(solve(n, m, s, k, t))
 
-    print(y + 1, x + 1)
-
-# for r, c in ret:
-#     print(r + 1, c + 1)
+for r, c in ret:
+    print(r + 1, c + 1)
